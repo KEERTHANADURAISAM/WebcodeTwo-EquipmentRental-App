@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap");
+.footer{
+    height: 250px;
+    background-color: rgb(80, 104, 125);
+}
+.Foot-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    
+   
+}
+.Foot-container h3{
+text-align: center;
+margin-top: 15px;
+color:rgb(124, 169, 193);
+letter-spacing: 2px;
+font-family: Aclonica;
+}
+.foot-container-card{
+    height: 210px;
+    width: 180px;
+}
+.foot-container-card p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 5px;
+color:rgb(225, 117, 117);
+}
+.footer-bottom{
+    color: rgb(131, 216, 219);
+}

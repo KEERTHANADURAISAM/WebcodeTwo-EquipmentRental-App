@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+
+.equipment-nav-container{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+background-color: rgb(80, 104, 125);
+text-align: center;
+padding: 10px;
+}
+
+.equipmentNav{
+    display: flex;
+    
+}
+.arrow-img{
+    height: 12px;
+    width:12px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.arrow-img1{
+    height: 12px;
+    width:12px;
+    margin-left: 4px;
+    margin-top: 20px;
+}
+.equipmentSpan{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(11, 11, 38);
+   margin-top: 15px;
+   margin-left: 4px;
+   }
+   .equipmentSpan:hover{
+color: whitesmoke;
+cursor: pointer;
+   }

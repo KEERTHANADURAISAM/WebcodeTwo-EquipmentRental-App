@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap");
+
+.fit-container {
+  margin-top: 50px;
+}
+
+.fit-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color:wheat; */
+  color: rgb(0, 0, 0);
+  margin-top: 250px;
+  padding: 20px;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.equipment-linkpage {
+  position: absolute;
+  transform: translateY(-50%);
+  display: inline-block;
+  animation: animate 2s linear infinite;
+  letter-spacing: 3px;
+  /* text-shadow: 2px 2px rgb(2, 227, 252); */
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.treadmill-img{
+  height: 100px;
+  width: 100px;
+}
+.fit-btn{
+  background-color: rgb(218, 3, 3);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.fit-btn:hover{
+background-color: white;
+color: rgb(192, 2, 2);
+}

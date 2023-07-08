@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300;400&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
+.nav-main-container{
+   
+    background-color: rgb(18, 38, 49);
+    box-shadow: 2px 2px rgb(117, 115, 116);
+    height: 120px;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-ul{
+    display: flex;
+    gap:80px;
+      
+}
+.nav-ul li{
+list-style-type: none;
+/* margin-right: 40px; */
+color: rgb(217, 185, 145);
+font-family: 'League Spartan', sans-serif;
+}
+.nav-icon{
+    
+    font-size: 40px;
+}
+.nav-cartText{
+    color: rgb(241, 33, 33);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+}
+.nav-input{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 30, 30);
+    font-size: 20px;
+    outline: none;
+    letter-spacing: 2px;
+    }
+.nav-logo{
+    height: 110px;
+    width: 110px;
+}
+.nav-login-btn{
+    background-color: rgb(218, 3, 3);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    
+}
+.nav-login-btn:hover{
+background-color: white;
+color: rgb(192, 2, 2);
+}
