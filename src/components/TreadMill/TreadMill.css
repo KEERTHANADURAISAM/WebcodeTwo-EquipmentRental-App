@@ -1,36 +1,55 @@
-.equipment-nav-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: rgb(80, 104, 125);
-    text-align: center;
-    padding: 10px;
-    
-    }
-    
-    .equipmentNav{
-        display: flex;
-        
-    }
-    .arrow-img{
-        height: 12px;
-        width:12px;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-    .arrow-img1{
-        height: 12px;
-        width:12px;
-        margin-top: 20px;
-        margin-left: 4px;
-    }
-    .equipmentSpan{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(11, 11, 38);
-       margin-top: 15px;
-       margin-left: 4px;
-       }
-       .equipmentSpan:hover{
-    color: whitesmoke;
-    cursor: pointer;
-       }
+
+.equipment-grid {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 55px;
+}
+
+.equipment-card-design {
+  height: 480px;
+  width: 320px;
+  background-color: rgb(18, 38, 49);
+  border-radius: 10px;
+  border: 1px solid rgb(18, 38, 49);
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 10px;
+}
+.whislist{
+  position: absolute;
+  top:13px;
+  right: 3px;
+}
+.whislist:hover{
+  transform: rotateY(360deg);
+}
+.equipment-pro-img {
+  margin-top: 8px;
+  height: 300px;
+  width: 300px;
+}
+.equipment-pro-img:hover {
+  transform: rotateY(180deg);
+}
+.-name:hover {
+  color: rgb(13, 131, 235);
+}
+.equipments-card-btn {
+  width: 150px;
+  padding: 10px;
+  background-color: rgb(21, 44, 66);
+  border: 1px solid aliceblue;
+  color: rgb(241, 242, 244);
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.equipments-card-btn:hover {
+  background-color: aliceblue;
+  border: 1px solid rgb(21, 44, 66);
+  color: rgb(21, 44, 66);
+}
