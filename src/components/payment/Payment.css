@@ -1,0 +1,28 @@
+
+.content-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 150px;
+    margin-left: 170px;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+
+/* popover */
+
+.link{
+    position: relative;
+    font-size: 1.5rem;
+    /* color: #fff; */
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-payment{
+position: absolute;
+left:50%;
+transform: translateX(-50%);
+border-radius: .5rem;
+padding: 1rem;  
+}

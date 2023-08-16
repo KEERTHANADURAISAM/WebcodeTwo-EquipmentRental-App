@@ -4,45 +4,78 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import SubNav from "../Navbar/SubNav";
 
-const Treadmill = () => {
-  const [img, setImg] = useState([]);//initially give empty array]
+const Treadmill = ({ add, setcart }) => {
+  const [img, setImg] = useState([]); //initially give empty array]
+  const [show, setShow] = useState(true);
+
+  const addToCart = (add, setcart) => {
+    setShow(false);
+    setcart(add + 1);
+  };
+
+  const RemoveCart = (add, setcart) => {
+    setShow(true);
+    setcart(add - 1);
+  };
+
   const navigate = useNavigate();
-  
+
   useEffect(() => {
-  LoadTreadImg();
+    LoadTreadImg();
   }, []);
 
   const LoadTreadImg = async () => {
-    const Treadimg = await axios.get("https://webcodetwo-server.onrender.com/treadmillimgs");
+    const Treadimg = await axios.get(
+      "https://webcodetwo-server.onrender.com/treadmillimgs"
+    );
     console.log(Treadimg);
     setImg(Treadimg.data);
     console.log(img);
   };
   return (
-    <div>
-      <><SubNav/></>
+    <>
+      <>
+        <SubNav />
+      </>
+      <div className="equipment-grid">
         {img.map((value, index) => {
-          return( 
-          <div key={index} className="equipment-grid">
-            <div className="equipment-card-design">
-              <h1 className="whislist">❤️</h1>
-          <img src={value.img} className="equipment-pro-img"/><br></br>
-          <div className="equipment-header">
-          <p className="-name">{value.productname}</p><br></br>
-          <p>mo{value.monthrent}</p><br></br>
-          <p>{value.caption}</p>
-          <p>{value.content}</p>
-          </div>
-          <button className="equipments-card-btn">Quick View</button>           
+          return (
+            <div key={index}>
+              <div className="equipment-card-design">
+                {show ? 
+                  <h1
+                    className="whishlist"
+                    onClick={() => addToCart(add, setcart)}
+                  >
+                    ❤️
+                  </h1>
+                 : 
+                  <h1
+                    className="whishlist-massager"
+                    onClick={() => RemoveCart(add, setcart)}
+                  >
+                    💜
+                  </h1>
+                }
+                <img src={value.img} className="equipment-pro-img" />
+                <br></br>
+                <div className="equipment-header">
+                  <p className="-name">{value.productname}</p>
+                  <br></br>
+                  <p>mo{value.monthrent}</p>
+                  <br></br>
+                  <div className="blur-card">
+                    <p>{value.caption}</p>
+                    <p>{value.content}</p>
+                  </div>
+                </div>
+                <button className="equipments-card-btn">Quick View</button>
+              </div>
             </div>
-            </div>
-          )
+          );
         })}
-      
-
-
-    </div>
+      </div>
+    </>
   );
 };
-
 export default Treadmill;

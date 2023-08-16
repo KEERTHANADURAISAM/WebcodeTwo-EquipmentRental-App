@@ -15,32 +15,28 @@ import MassagerOutOfStock from "./components/Massager/MassagerOutOfStock/Massage
 import Login from "./components/Authedication/Login";
 import SignUp from "./components/Authedication/SignUp/SignUp";
 // import { useEffect } from "react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 function App() {
-  useEffect (() => {
-      LoadOutOfStockImages();
-    },
-    []);
-  const LoadOutOfStockImages = async () => {
-    const loadimg = await fetch.get(
-      "https://webcodetwo-server.onrender.com/treadmillimgsoutofstock"
-    );
-  };
+  const [add, setCart] = useState(0);
 
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Fitness />} />
-          <Route path="/portal" element={<Portal />}>
+          <Route path="/portal" element={<Portal add={add} />}>
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<SignUp />} />
             <Route path="fitness-equipment" element={<Equipment />} />
             <Route
               path="fitness-treadmill"
-              element={<Treadmill loadimg={LoadOutOfStockImages} />}
+              element={<Treadmill add={add} setcart={setCart} />}
             />
-            <Route path="fitness-crosstrainer" element={<CrossTrainer />} />
+
+            <Route
+              path="fitness-crosstrainer"
+              element={<CrossTrainer add={add} setcart={setCart} />}
+            />
             <Route path="fitness-exercisebikes" element={<ExerciseBikes />} />
             <Route path="fitness-massager" element={<Massager />} />
             <Route path="fitness-allEquipment" element={<ViewAllEquipment />} />

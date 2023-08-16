@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import logo from './logo.jpg'
 
-const Navbar = () => {
+const Navbar = ({add}) => {
   return (
     <div className='nav-main-container'>
 <nav className='nav-container'>
@@ -14,7 +14,7 @@ const Navbar = () => {
   </div>
 <ul className='nav-ul'>
  
-    <li><span className='nav-icon'>🛒</span><span className='nav-cartText'>Cart</span></li>
+    <li><span className='nav-icon'>🛒</span><span className='nav-cartText'>❤️{add}</span></li>
     <li><button type="submit" className='nav-login-btn'>Login <span>/</span>SignUp</button></li>
 
 </ul>

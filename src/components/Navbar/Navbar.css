@@ -30,7 +30,7 @@ font-family: 'League Spartan', sans-serif;
 .nav-cartText{
     color: rgb(241, 33, 33);
     font-family: 'League Spartan', sans-serif;
-    font-size: 25px;
+    /* font-size: 20px; */
     font-weight:bold;
 }
 .nav-input{

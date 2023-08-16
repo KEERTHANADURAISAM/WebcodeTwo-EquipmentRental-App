@@ -1,7 +1,12 @@
-
 .equipment-grid {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
   padding: 10px;
+  margin-left: 175px;
   margin-top: 55px;
 }
 
@@ -18,12 +23,12 @@
   position: relative;
   padding: 10px;
 }
-.whislist{
+.whishlist {
   position: absolute;
-  top:13px;
+  top: 13px;
   right: 3px;
 }
-.whislist:hover{
+.whislist:hover {
   transform: rotateY(360deg);
 }
 .equipment-pro-img {
@@ -36,6 +41,9 @@
 }
 .-name:hover {
   color: rgb(13, 131, 235);
+}
+.blur-card {
+  opacity: 0.7;
 }
 .equipments-card-btn {
   width: 150px;

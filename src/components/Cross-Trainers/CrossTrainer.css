@@ -1,37 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Caveat:wght@700&family=Dancing+Script:wght@400;500&family=League+Spartan:wght@500&family=Literata:wght@300&family=Noto+Serif+NP+Hmong:wght@500&family=Paytone+One&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sedgwick+Ave+Display&family=Slackey&display=swap');
 
-.equipment-nav-container{
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-background-color: rgb(80, 104, 125);
-text-align: center;
-padding: 10px;
-}
-
-.equipmentNav{
+.equipment-grid-trainer{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    margin-left: 195px;
+    margin-top: 55px;
     
-}
-.arrow-img{
-    height: 12px;
-    width:12px;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.arrow-img1{
-    height: 12px;
-    width:12px;
-    margin-left: 4px;
-    margin-top: 20px;
-}
-.equipmentSpan{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(11, 11, 38);
-   margin-top: 15px;
-   margin-left: 4px;
-   }
-   .equipmentSpan:hover{
-color: whitesmoke;
-cursor: pointer;
-   }
+  }
+  
+  .equipment-card-design-trainer {
+    height: 480px;
+    width: 320px;
+    background-color: rgb(18, 38, 49);
+    border-radius: 10px;
+    border: 1px solid rgb(18, 38, 49);
+    color: aliceblue;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 10px;
+  }
+  .whishlist-trainer{
+    position: absolute;
+    top:13px;
+    right: 3px;
+  }
+  .whishlist-trainer:hover{
+    transform: rotateY(360deg);
+  }
+  .equipment-pro-img-trainer {
+    margin-top: 8px;
+    height: 300px;
+    width: 300px;
+  }
+  .equipment-pro-img-trainer:hover {
+    transform: rotateY(180deg);
+  }
+  .-name-trainer:hover {
+    color: rgb(13, 131, 235);
+  }
+  .equipments-card-btn-trainer {
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(21, 44, 66);
+    border: 1px solid aliceblue;
+    color: rgb(241, 242, 244);
+    border-radius: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+  .equipments-card-btn-trainer:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(21, 44, 66);
+    color: rgb(21, 44, 66);
+  }
+  
