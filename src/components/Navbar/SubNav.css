@@ -1,0 +1,33 @@
+.equipment-nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(80, 104, 125);
+    text-align: center;
+    padding: 10px;
+  }
+  .equipmentNav {
+    display: flex;
+  }
+  .arrow-img {
+    height: 12px;
+    width: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .arrow-img1 {
+    height: 12px;
+    width: 12px;
+    margin-top: 20px;
+    margin-left: 4px;
+  }
+  .equipmentSpan {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(11, 11, 38);
+    margin-top: 15px;
+    margin-left: 4px;
+  }
+  .equipmentSpan:hover {
+    color: whitesmoke;
+    cursor: pointer;
+  }

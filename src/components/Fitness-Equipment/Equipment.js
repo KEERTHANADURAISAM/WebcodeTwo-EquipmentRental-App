@@ -74,9 +74,6 @@ const ViewAllComponent= () =>{
 <img src={rightarrow} className='right-arrow'/>
 </div>
       </div>
-      <div>
-        <Footer/>
-      </div>
       </div>
   )
 }
