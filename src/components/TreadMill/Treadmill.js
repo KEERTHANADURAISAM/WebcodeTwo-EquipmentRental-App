@@ -29,7 +29,8 @@ const Treadmill = ({ add, setcart }) => {
 
   const LoadTreadImg = async () => {
     const Treadimg = await axios.get(
-      "https://webcodetwo-server.onrender.com/treadmillimgs"
+      "https://equipment-backend.onrender.com/treadmillimgs"
+      
     );
     console.log(Treadimg);
     setImg(Treadimg.data);

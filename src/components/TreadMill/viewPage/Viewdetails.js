@@ -15,7 +15,7 @@ const Viewdetails = () => {
   const LoadTreadImg = async () => {
     try {
       const object = await axios.get(
-        `https://webcodetwo-server.onrender.com/treadmillimgs/${params.id}`
+        `https://equipment-backend.onrender.com/treadmillimgs/${params.id}`
        
       );
       console.log(object.data);

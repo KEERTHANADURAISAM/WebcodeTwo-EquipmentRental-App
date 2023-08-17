@@ -28,7 +28,7 @@ const Massager = ({add, setcart}) => {
         }, []);
       
         const LoadTreadImg = async () => {
-          const Treadimg = await axios.get("https://webcodetwo-server.onrender.com/massagersimgs");
+          const Treadimg = await axios.get("https://equipment-backend.onrender.com/crosstrainersimgs/massagersimgs");
           console.log(Treadimg);
           setImg(Treadimg.data);
           console.log(img);

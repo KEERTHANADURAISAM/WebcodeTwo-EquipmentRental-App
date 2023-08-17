@@ -27,7 +27,7 @@ const RemoveCart = (add, setcart) => {
       }, []);
     
       const LoadTreadImg = async () => {
-        const Treadimg = await axios.get("https://webcodetwo-server.onrender.com/crosstrainersimgs");
+        const Treadimg = await axios.get("https://equipment-backend.onrender.com/crosstrainersimgs");
         console.log(Treadimg);
         setImg(Treadimg.data);
         console.log(img);

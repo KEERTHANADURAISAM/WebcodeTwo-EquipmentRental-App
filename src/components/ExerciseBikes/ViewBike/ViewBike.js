@@ -14,7 +14,7 @@ const ViewBike = () => {
     const LoadTreadImg = async () => {
       try {
         const object = await axios.get(
-          `https://webcodetwo-server.onrender.com/exercisebikesimgs/${params.id}`
+          `https://equipment-backend.onrender.com/exercisebikesimgs/${params.id}`
          
         );
         console.log(object.data);

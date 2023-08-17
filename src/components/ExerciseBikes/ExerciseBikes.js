@@ -37,7 +37,7 @@ useEffect(() => {
       }, []);
     
       const LoadTreadImg = async () => {
-        const Treadimg = await axios.get("https://webcodetwo-server.onrender.com/exercisebikesimgs");
+        const Treadimg = await axios.get("https://equipment-backend.onrender.com/exercisebikesimgs");
         console.log(Treadimg);
         setImg(Treadimg.data);
         console.log(img);

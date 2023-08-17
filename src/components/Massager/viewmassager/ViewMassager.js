@@ -14,7 +14,7 @@ const ViewMassager = () => {
     const LoadTreadImg = async () => {
       try {
         const object = await axios.get(
-          `https://webcodetwo-server.onrender.com/massagersimgs/${params.id}`
+          `https://equipment-backend.onrender.com/${params.id}`
          
         );
         console.log(object.data);
