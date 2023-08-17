@@ -1,5 +1,4 @@
-
-.equipment-grid-massager{
+.equipment-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,12 +6,11 @@
     align-items: center;
     gap: 40px;
     padding: 10px;
-    margin-left: 345px;
+    margin-left: 175px;
     margin-top: 55px;
-    
   }
   
-  .equipment-card-design-massager {
+  .equipment-card-design {
     height: 480px;
     width: 320px;
     background-color: rgb(18, 38, 49);
@@ -25,26 +23,29 @@
     position: relative;
     padding: 10px;
   }
-  .whishlist-massager{
+  .whishlist {
     position: absolute;
-    top:13px;
+    top: 13px;
     right: 3px;
   }
-  .whishlist-massager:hover{
+  .whislist:hover {
     transform: rotateY(360deg);
   }
-  .equipment-pro-img-massager {
+  .equipment-pro-img {
     margin-top: 8px;
     height: 300px;
     width: 300px;
   }
-  .equipment-pro-img-massager:hover {
+  .equipment-pro-img:hover {
     transform: rotateY(180deg);
   }
-  .-name-massager:hover {
+  .-name:hover {
     color: rgb(13, 131, 235);
   }
-  .equipments-card-btn-massager {
+  .blur-card {
+    opacity: 0.7;
+  }
+  .equipments-card-btn {
     width: 150px;
     padding: 10px;
     background-color: rgb(21, 44, 66);
@@ -54,9 +55,8 @@
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     letter-spacing: 2px;
-    text-decoration: none;
   }
-  .equipments-card-btn-massager:hover {
+  .equipments-card-btn:hover {
     background-color: aliceblue;
     border: 1px solid rgb(21, 44, 66);
     color: rgb(21, 44, 66);

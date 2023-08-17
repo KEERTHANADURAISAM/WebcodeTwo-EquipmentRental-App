@@ -1,14 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import './CrossTrainer.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SubNav from '../Navbar/SubNav';
 import axios from 'axios';
 
-const CrossTrainer = () => {
+const CrossTrainer = ({add,setcart}) => {
     const navigate=useNavigate()
 const [img,setImg]=useState([]);
+const [show, setShow] = useState(true);
 
-    const fitnessEquipmentPage=()=>{
+const addToCart = (add, setcart) => {
+  setShow(false);
+  setcart(add + 1);
+};
+
+const RemoveCart = (add, setcart) => {
+  setShow(true);
+  setcart(add - 1);
+};
+
+ const fitnessEquipmentPage=()=>{
       navigate('/portal/fitness-equipment')
     }
     useEffect(() => {
@@ -29,15 +40,28 @@ const [img,setImg]=useState([]);
         {img.map((value, index) => {
           return( 
       <div className="equipment-card-design-trainer" key={index}>
-              <h1 className="whishlist-trainer">❤️</h1>
+               {show ? 
+                  <h1
+                    className="whishlist"
+                    onClick={() => addToCart(add, setcart)}
+                  >
+                    ❤️
+                  </h1>: 
+                  <h1
+                    className="whishlist-massager"
+                    onClick={() => RemoveCart(add, setcart)}
+                  >
+                    💜
+                  </h1>
+                }
           <img src={value.img} className="equipment-pro-img-trainer"/><br></br>
           <div className="equipment-header-trainer">
           <p className="-name-trainer">{value.productname}</p><br></br>
           <p>mo{value.monthrent}</p><br></br>
           <p>{value.caption}</p>
-          <p>{value.content}</p>
+          <p>{value.content}</p><br></br>
           </div>
-          <button className="equipments-card-btn-trainer">Quick View</button>           
+          <Link style={{textDecoration: 'none'}} to={`/portal/trainers/${value._id}`} className="equipments-card-btn" >Quick View</Link>                   
             </div>
          
           )

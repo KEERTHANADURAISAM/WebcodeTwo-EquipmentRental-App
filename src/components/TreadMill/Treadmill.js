@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./TreadMill.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import SubNav from "../Navbar/SubNav";
 
@@ -19,7 +19,10 @@ const Treadmill = ({ add, setcart }) => {
   };
 
   const navigate = useNavigate();
-
+ 
+  const viewByimg =()=>{
+    navigate("treadmillview")
+  }
   useEffect(() => {
     LoadTreadImg();
   }, []);
@@ -48,8 +51,7 @@ const Treadmill = ({ add, setcart }) => {
                     onClick={() => addToCart(add, setcart)}
                   >
                     ❤️
-                  </h1>
-                 : 
+                  </h1>: 
                   <h1
                     className="whishlist-massager"
                     onClick={() => RemoveCart(add, setcart)}
@@ -66,10 +68,10 @@ const Treadmill = ({ add, setcart }) => {
                   <br></br>
                   <div className="blur-card">
                     <p>{value.caption}</p>
-                    <p>{value.content}</p>
+                    <p>{value.content}</p><br></br>
                   </div>
                 </div>
-                <button className="equipments-card-btn">Quick View</button>
+                <Link style={{textDecoration: 'none'}} to={`/portal/treadmillview/${value._id}`} className="equipments-card-btn" >Quick View</Link>
               </div>
             </div>
           );

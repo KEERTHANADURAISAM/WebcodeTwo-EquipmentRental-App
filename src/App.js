@@ -8,14 +8,14 @@ import CrossTrainer from "./components/Cross-Trainers/CrossTrainer";
 import ExerciseBikes from "./components/ExerciseBikes/ExerciseBikes";
 import Massager from "./components/Massager/Massager";
 import ViewAllEquipment from "./components/ViewAllEquipment/ViewAllEquipment";
-import CrossOutOfStock from "./components/Cross-Trainers/Cross-OutOfStock/CrossOutOfStock";
-import TreadMillOutOfStock from "./components/TreadMill/TreadMill-OutOfStock/TreadMillOutOfStock";
-import ViewAllOutOfStock from "./components/ViewAllEquipment/ViewAllOutOfStock/ViewAllOutOfStock";
-import MassagerOutOfStock from "./components/Massager/MassagerOutOfStock/MassagerOutOfStock";
 import Login from "./components/Authedication/Login";
 import SignUp from "./components/Authedication/SignUp/SignUp";
-// import { useEffect } from "react";
+
 import React, { useEffect, useState } from "react";
+import Viewdetails from "./components/TreadMill/viewPage/Viewdetails";
+import Payment from "./components/payment/Payment";
+import ViewBike from "./components/ExerciseBikes/ViewBike/ViewBike";
+import ViewTrainers from "./components/Cross-Trainers/viewcross/ViewTrainers";
 function App() {
   const [add, setCart] = useState(0);
 
@@ -37,30 +37,16 @@ function App() {
               path="fitness-crosstrainer"
               element={<CrossTrainer add={add} setcart={setCart} />}
             />
-            <Route path="fitness-exercisebikes" element={<ExerciseBikes />} />
-            <Route path="fitness-massager" element={<Massager />} />
+            <Route path="fitness-exercisebikes" element={<ExerciseBikes add={add} setcart={setCart} />} />
+            <Route path="fitness-massager" element={<Massager add={add} setcart={setCart} />} />
             <Route path="fitness-allEquipment" element={<ViewAllEquipment />} />
-            <Route
-              path="fitness-allEquipment-outofstock"
-              element={<ViewAllOutOfStock />}
-            />
-            <Route
-              path="cross-trainer-outofstock"
-              element={<CrossOutOfStock />}
-            />
-            <Route
-              path="cross-treadmill-outofstock"
-              element={<TreadMillOutOfStock />}
-            />
-            <Route
-              path="cross-massager-outofstock"
-              element={<MassagerOutOfStock />}
-            />
-            <Route
-              path="cross-trainer-outofstock"
-              element={<CrossOutOfStock />}
-            />
+           <Route path="treadmillview/:id" element={<Viewdetails/>}/>
+           <Route path="exercisebikes/:id" element={<ViewBike/>}/>
+           <Route path="massager/:id" element={<Viewdetails/>}/>
+           <Route path="trainers/:id" element={<ViewTrainers/>}/>
+          
           </Route>
+          <Route path="payment" element={<Payment/>}/>
         </Routes>
       </BrowserRouter>
     </div>
