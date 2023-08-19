@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
+import './ViewMassager.css';
 
 const ViewMassager = () => {
     const [obj, setObj] = useState([]);

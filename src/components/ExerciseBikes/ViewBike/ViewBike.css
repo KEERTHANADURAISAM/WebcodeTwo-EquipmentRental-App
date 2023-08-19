@@ -1,0 +1,9 @@
+.btn{
+padding: 10px;
+color: aqua;
+background-color: rgb(18, 38, 49);
+}
+.btn:hover{
+color:rgb(18, 38, 49);
+background-color: aqua;
+}
