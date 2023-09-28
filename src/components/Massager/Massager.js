@@ -29,7 +29,7 @@ const Massager = ({ add, setcart }) => {
 
   const LoadTreadImg = async () => {
     const Treadimg = await axios.get(
-      "https://equipment-backend.onrender.com/crosstrainersimgs/massagersimgs"
+      "https://webcodetwo-server.onrender.com/massagersimgs"
     );
     console.log(Treadimg);
     setImg(Treadimg.data);
@@ -42,8 +42,7 @@ const Massager = ({ add, setcart }) => {
       </>
       <div className="equipment-grid-massager">
         {img.map((value, index) => {
-          return (
-            <div className="equipment-card-design-massager" key={index}>
+          return <div className="equipment-card-design-massager" key={index}>
               {show ? (
                 <h1
                   className="whishlist-massager"
@@ -78,7 +77,6 @@ const Massager = ({ add, setcart }) => {
                 Quick View
               </Link>
             </div>
-          );
         })}
       </div>
     </div>

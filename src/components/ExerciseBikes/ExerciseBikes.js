@@ -25,13 +25,6 @@ const RemoveCart = (add, setcart) => {
 };
 
 
-
-
-
-
-
-
-
 useEffect(() => {
       LoadTreadImg();
       }, []);
