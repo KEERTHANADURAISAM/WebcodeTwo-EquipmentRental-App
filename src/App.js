@@ -22,9 +22,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* {!user ?(
+      {!user ?(
         <Login />
-      ) : ( */}
+      ) : (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Fitness />} />
@@ -58,7 +58,7 @@ function App() {
             <Route path="payment" element={<Payment />} />
           </Routes>
         </BrowserRouter>
-      {/* )} */}
+      )}
     </div>
   );
 }
